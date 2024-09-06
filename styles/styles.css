@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: SpectralSemiBold;
+    src: url("../fonts/Spectralscsemibold.ttf");
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #d5d9da;
+}
+                                                /* HEADER */
+
+.main-image {
+    background-image: url("../images/main-image.png");
+    background-size: cover;
+    background-position: center;
+    height: 811px;
+}
+
+.header {
+    background-color: #dde0db;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    font-size: 0;
+}
+
+.header .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .menu {
+    margin-left: 354px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .menu ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.header .menu ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 28px;
+}
+
+.header .menu ul li a {
+    font-size: 16px;
+    color: rgb(70, 80, 85);
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.header-actions {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 94px;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 11px;
+    padding: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    width: 202px;
+}
+
+.button.button-transparent {
+    color: rgb(70, 80, 85);
+    background-color: transparent;
+    border: 1px solid #818282;
+}
+
+                                     /* GALLERY */
+
+.gallery {
+    padding: 102px 0 55px 0;
+}
+
+.gallery h2 {
+    font-size: 40px;
+    font-family: SpectralSemiBold, sans-serif;
+    color: rgb(47, 40, 34);
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 54px;
+    text-align: center;
+}
+
+.gallery-description {
+    font-size: 18px;
+    color: rgb(62, 52, 44);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.gallery-items {
+    margin-left: -12px;
+    margin-right: -12px;
+    font-size: 0;
+}
+
+.gallery-item {
+    margin: 12px 11px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 384px;
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.gallery-text {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+
+.gallery-item.gallery-item-big {
+    width: 792px;
+}
+
+.gallery-eye {
+    display: none;
+    opacity: 0.6;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 290px;
+}
+
+.gallery-eye img {
+    vertical-align: middle;
+}
+
+.gallery-item:hover .gallery-eye {
+    display: block;
+}
+
+                                           /* TOURS */
+
+.tours {
+    padding: 54px 0 88px 0;
+}
+
+.tours h2 {
+    font-size: 40px;
+    font-family: SpectralSemiBold, sans-serif;
+    color: rgb(47, 40, 34);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tours-items {
+    margin-right: -12px;
+    margin-left: -10px;
+    font-size: 0;
+}
+
+.tour-item {
+    margin-right: 26px;
+    margin-left: -8px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 384px;
+    position: relative;
+}
+
+.tour-item:last-child {
+    margin-right: 0;
+}
+
+
+.tour-item-info {
+    background-color: #31393f;
+    padding: 22px 22px 40px 22px;
+}
+
+.tour-item-text {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.button.button-filled {
+    background-color: #da8246;
+    font-size: 18px;
+    color: rgb(37, 41, 43);
+}
+
+.tour-item-action {
+    text-align: center;
+}
+
+.button.button-filled:hover {
+    box-shadow: 0 4px 14px 0.75px rgba(217, 149, 103, 0.8);
+}
+
+.fixed-block {
+    width: 46px;
+    height: 46px;
+    background-color: #da8246;
+    text-align: center;
+    line-height: 46px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fixed-block img {
+    vertical-align: middle;
+}
+
+                                               /* FOOTER */
+
+.footer {
+    padding: 50px 0 46px 0;
+    background-color: #31393f;
+}
+
+.footer .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-contacts {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 850px;
+    text-align: center;
+    color: #83919c;
+}
+
+.footer-contact {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.footer-phones {
+    font-size: 14px;
+    color: #83919c;
+    line-height: 1.4;
+}
